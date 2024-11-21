@@ -110,6 +110,7 @@ function createPost(author, content) {
 function escapeHtml(str) {
     if (!str) return '';
     return str
+        .toString()
         .replace(/&/g, '&amp;')
         .replace(/</g, '&lt;')
         .replace(/>/g, '&gt;')
